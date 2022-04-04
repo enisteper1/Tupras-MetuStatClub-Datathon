@@ -42,9 +42,14 @@ The data set is encoded to preserve privacy policy. Brief information of feature
 
 ## 2. Data Preprocessing & Visualization
 
-In this section, wrongly encoded datetime values are cleaned and data is shifted from 29 Feb 2015 because 29 Feb is not happened at 2015. Additionally, some outliers on output are eliminated.
+In this section, wrongly encoded datetime values are cleaned and data is shifted from 29 Feb 2015 because 29 Feb is not happened at 2015. Tree based models will be used as regressors, that is why it is not required to be handle outliers with interquartile ranges or other methods.
 
 <img src="https://user-images.githubusercontent.com/45767042/161612186-760778ca-5443-4249-82ee-f69b7c9154bc.png">
+
+By reason of E1 and E2 values were measured once a week and output was measured once a day, E1 and E2 values were filled with it's past values for each week. However, because of D is output and data is hour based encoded mean of past 23 hours of each day is obtained to make prediction regarding them. Because of only gathering data once 24 data points only 438 rows left to train. 
+
+
+<img src="https://user-images.githubusercontent.com/45767042/161615414-5202b425-7d56-4d20-bc14-ac85fb1abd0e.png">
 
 
 ## 3. Feature Engineering
