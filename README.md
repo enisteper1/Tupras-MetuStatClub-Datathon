@@ -73,4 +73,8 @@ Different regression algorithms are tried to find the best solution for the prob
 
 <img src="https://user-images.githubusercontent.com/45767042/161613635-aa471e42-2cc5-4f83-a86b-c91b8648ce25.png">
 
+As a final predictior, ensemble of XGBoost and CatBoost is used for further estimations.
+
+<img src="https://user-images.githubusercontent.com/45767042/161617163-626e4b17-d0e6-4f8e-9784-bae9be38c193.png">
+
 
